@@ -10,14 +10,11 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by jt on 1/10/17.
- */
 @Service
 public class ProductServiceImpl implements ProductService {
 
-    private ProductRepository productRepository;
-    private ProductFormToProduct productFormToProduct;
+    private final ProductRepository productRepository;
+    private final ProductFormToProduct productFormToProduct;
 
     @Autowired
     public ProductServiceImpl(ProductRepository productRepository, ProductFormToProduct productFormToProduct) {
